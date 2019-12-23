@@ -8,4 +8,4 @@ jobs:
 
     steps:
     - name: Install Ionic and Cordova
-      run: npm install -g ionic cordova
+      run: npm install ionic cordova
