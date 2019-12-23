@@ -7,15 +7,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
 
-    - name: Install Ionic and Cordova
-      run: npm install ionic cordova
+    - name: Use coturiv/setup-ionic
+      uses: coturiv/setup-ionic@v1
+      with:
+        cordova-version: 8
+
+    - name: Checkout
+      uses: actions/checkout@v1        
 
     - name: Build
       run: |
-        npm install
         ionic build --prod -- --base-href 'https://hoodaajay99.github.io/techskillo/'
         ls www
 
