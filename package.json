@@ -9,7 +9,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "__comment1": "https://stackoverflow.com/questions/53036381/how-to-deploy-ionic-4-app-to-github-pages",
+    "__comment2": "ng build --base-href 'https://hoodaajay99.github.io/techskillo/' --prod && npx ngh --dir=www/",
+    "gh-pages": "ionic build --prod -- --base-href 'https://hoodaajay99.github.io/techskillo/' && npx ngh --dir=www/"
   },
   "private": true,
   "dependencies": {
