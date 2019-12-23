@@ -7,5 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+    - uses: actions/checkout@v1
+
     - name: Install Ionic and Cordova
       run: npm install ionic cordova
+
+    - name: Script
+      run: ls
