@@ -1,8 +1,8 @@
 {
   "name": "techskillo",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Ajay Hooda - Tech Skillo",
+  "homepage": "https://techskillo.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -58,5 +58,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "An Tech Skillo Project"
 }
