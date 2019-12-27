@@ -1,96 +1,82 @@
 <ion-header>
-
-
   <ion-toolbar>
-
     <ion-buttons slot="start">
-      <img class="header-logo" src="assets/TechSkilloFaviconAlpha.png" />
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
-    <ion-buttons slot="primary">
-
-      <ion-button color="secondary">
-        <ion-icon slot="end" name="information-circle"></ion-icon>
-        About Us
-      </ion-button>
-
-    </ion-buttons>
+    <!-- <ion-buttons slot="start">
+      <ion-avatar class="margin-5px">
+        <img src="assets/TechSkilloFaviconAlpha.png" />
+      </ion-avatar>
+    </ion-buttons> -->
 
     <ion-title> Tech Skillo </ion-title>
 
+    <ion-buttons slot="primary">
+      <ion-button (click)="onClick()">
+        About
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-
 </ion-header>
 
 <ion-content>
+  <div class="bgimg">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <a href="https://cprog.techskillo.com">
+            <ion-card>
+              <img src="assets/imgs/prog-c-lang.png" />
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
+              <ion-card-header>
+                <ion-card-title> Programming in C Language</ion-card-title>
+              </ion-card-header>
 
-        <a href="https://cprog.techskillo.com">
+              <ion-card-content>
+                Learn C Programming from Beginners to Advanced Course. This
+                tutorial does not require any prior programming experience.
+              </ion-card-content>
+            </ion-card>
+          </a>
+        </ion-col>
+        <ion-col>
+          <a href="https://ldd.techskillo.com">
+            <ion-card>
+              <img src="assets/imgs/prog-linux-device-drivers.png" />
 
-          <ion-card>
-            <img src="assets/imgs/prog-c-lang.png" />
+              <ion-card-header>
+                <ion-card-title>
+                  Linux Kernel and Device Drivers
+                </ion-card-title>
+              </ion-card-header>
 
-            <ion-card-header>
-              <ion-card-title> Programming in C Language</ion-card-title>
-            </ion-card-header>
+              <ion-card-content>
+                Learn Linux Kernel Internals and Device Drivers, including
+                Kernel Modules, Character Drivers, Network Drivers
+              </ion-card-content>
+            </ion-card>
+          </a>
+        </ion-col>
 
-            <ion-card-content>
-              Learn C Programming from Beginners to Advanced Course.
-              This tutorial does not require any prior programming experience.
-            </ion-card-content>
-          </ion-card>
-
-        </a>
-
-      </ion-col>
-      <ion-col>
-
-        <a href="https://ldd.techskillo.com">
-
-          <ion-card>
-            <img src="assets/imgs/prog-linux-device-drivers.png" />
-
-            <ion-card-header>
-              <ion-card-title> Linux Kernel and Device Drivers </ion-card-title>
-            </ion-card-header>
-
-            <ion-card-content>
-              Learn Linux Kernel Internals and Device Drivers, including
-              Kernel Modules, Character Drivers, Network Drivers
-            </ion-card-content>
-          </ion-card>
-
-        </a>
-
-      </ion-col>
-
-      <ion-col>
-
-        <!-- <a href="https://ldd.techskillo.com">
-          <ion-card>
-            <img src="assets/imgs/c-prog.png" />
-
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-            </ion-card-header>
-
-            <ion-card-content>
-              Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
-            </ion-card-content>
-          </ion-card>
-
-        </a> -->
-
-
-
-      </ion-col>
-
-    </ion-row>
-  </ion-grid>
-
-
+        <ion-col>
+          <!-- <a href="https://ldd.techskillo.com">
+                <ion-card>
+                  <img src="assets/imgs/c-prog.png" />
+      
+                  <ion-card-header>
+                    <ion-card-title>Card Title</ion-card-title>
+                  </ion-card-header>
+      
+                  <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                  </ion-card-content>
+                </ion-card>
+      
+              </a> -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

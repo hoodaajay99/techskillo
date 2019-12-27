@@ -1,3 +1,32 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <a href="https://techskillo.com">
+            <div align="center" class="ion-margin">
+              <ion-avatar>
+                <img src="assets/TechSkilloFaviconAlpha.png" />
+              </ion-avatar>
+              <!-- <div class="ion-margin-top">Tech Skillo</div> -->
+            </div>
+          </a>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item lines="none" [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon size="large" slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{ p.title }}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

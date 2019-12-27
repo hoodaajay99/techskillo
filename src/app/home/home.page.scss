@@ -1,10 +1,18 @@
-
 .header-logo {
-    margin-left: 10px;
-    height: 40px;
-    width: 50px;
+  height: 40px;
+  width: 50px;
+}
+
+.bgimg {
+  background-image: url('../../assets/imgs/bg-main-page.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
+
+
+
