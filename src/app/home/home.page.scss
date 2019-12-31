@@ -1,6 +1,6 @@
 .home-section-1 {
   //border: 1px solid red;
-  height: 460px;
+  min-height: 460px;
   background: linear-gradient(120deg, #874aa2 50%, #f39c12 50%);
 
   // background-image: url('../../assets/imgs/bg3.png');
@@ -9,7 +9,7 @@
 }
 
 .home-section-1-1 {
-  height: 460px;
+  min-height: 460px;
 }
 
 .vertical-center {
