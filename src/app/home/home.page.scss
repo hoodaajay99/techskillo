@@ -1,18 +1,41 @@
-.header-logo {
-  height: 40px;
-  width: 50px;
+.home-section-1 {
+  //border: 1px solid red;
+  height: 460px;
+  background: linear-gradient(120deg, #874aa2 50%, #f39c12 50%);
+
+  // background-image: url('../../assets/imgs/bg3.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
-.bgimg {
-  background-image: url('../../assets/imgs/bg-main-page.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
+.home-section-1-1 {
+  height: 460px;
 }
 
-a:link {
-  text-decoration: none;
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
 }
 
+.image1 {
+  object-fit:cover;
+  //margin: 20px;
+  // height: 400px;
+  // width: 400px;
+}
 
+.home-about {
+  text-align: center;
+  margin-top: 30px;
+  margin-top: 30px;
+}
 
+.home-card-avatar {
+  height: 100px;
+  width: 100px;
+  border: 8px solid #f39c12;
+}

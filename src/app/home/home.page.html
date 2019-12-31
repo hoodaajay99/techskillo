@@ -4,13 +4,14 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
-    <!-- <ion-buttons slot="start">
-      <ion-avatar class="margin-5px">
-        <img src="assets/TechSkilloFaviconAlpha.png" />
-      </ion-avatar>
-    </ion-buttons> -->
-
-    <ion-title> Tech Skillo </ion-title>
+    <ion-title>
+      <span class="font-large-bold">
+        Tech Skillo
+      </span>
+      <!-- <span>
+        > Home
+      </span> -->
+    </ion-title>
 
     <ion-buttons slot="primary">
       <ion-button>
@@ -21,62 +22,102 @@
 </ion-header>
 
 <ion-content>
-  <div class="bgimg">
+  <div class="home-section-1">
     <ion-grid>
-      <ion-row>
-        <ion-col>
-          <a href="https://cprog.techskillo.com">
-            <ion-card>
-              <img src="assets/imgs/prog-c-lang.png" />
-
-              <ion-card-header>
-                <ion-card-title> Programming in C Language</ion-card-title>
-              </ion-card-header>
-
-              <ion-card-content>
-                Learn C Programming from Beginners to Advanced Course. This
-                tutorial does not require any prior programming experience.
-              </ion-card-content>
-            </ion-card>
-          </a>
-        </ion-col>
-        <ion-col>
-          <a href="https://ldd.techskillo.com">
-            <ion-card>
-              <img src="assets/imgs/prog-linux-device-drivers.png" />
-
-              <ion-card-header>
-                <ion-card-title>
-                  Linux Kernel and Device Drivers
-                </ion-card-title>
-              </ion-card-header>
-
-              <ion-card-content>
-                Learn Linux Kernel Internals and Device Drivers, including
-                Kernel Modules, Character Drivers, Network Drivers
-              </ion-card-content>
-            </ion-card>
-          </a>
+      <ion-row class="ion-margin">
+        <ion-col
+          class="home-section-1-1"
+          size="12"
+          size-md="6"
+          size-lg="6"
+          size-xl="6"
+          align-self-center
+        >
+          <div class="vertical-center">
+            <h1><b> Tech Skillo </b></h1>
+            <h3><b> Home to Learn Programming! </b></h3>
+            <h5>
+              Tech Skillo is a platform to learn programming with high quality
+              tutorials, courses and videos.
+            </h5>
+            <ion-button
+              size="large"
+              fill="outline"
+              class="ion-margin-top"
+              color="light"
+            >
+              <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
+              Visit Courses
+            </ion-button>
+          </div>
         </ion-col>
 
-        <ion-col>
-          <!-- <a href="https://ldd.techskillo.com">
-                <ion-card>
-                  <img src="assets/imgs/c-prog.png" />
-      
-                  <ion-card-header>
-                    <ion-card-title>Card Title</ion-card-title>
-                  </ion-card-header>
-      
-                  <ion-card-content>
-                    Keep close to Nature's heart... and break clear away, once in awhile,
-                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
-                  </ion-card-content>
-                </ion-card>
-      
-              </a> -->
+        <ion-col class="home-section-1-1" align-self-center>
+          <div class="vertical-center">
+            <div class="ion-margin">
+              <img src="assets/imgs/18.png" alt="Tech Skillo" class="image1" />
+            </div>
+            <!-- 17, 18 -->
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>
   </div>
+
+  <div class="home-about">
+    <ion-grid>
+      <ion-row>
+        <ion-col> </ion-col>
+        <ion-col size="8">
+          <h4 class="ion-margin"><b>ABOUT TECHSKILLO</b></h4>
+          <h1 class="ion-margin">
+            A place to learn latest programming with high quality tutorials,
+            courses and videos.
+          </h1>
+          <h6 class="ion-margin">
+            Courses are designed in a way that they are easy to follow, latest
+            in market, provide you support for questions and can earn you a
+            certificate.
+          </h6>
+        </ion-col>
+        <ion-col> </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size="12"
+        size-md="3"
+        size-lg="3"
+        size-xl="3"
+        *ngFor="let cardItem of cardsList"
+      >
+        <ion-card>
+          <!-- <img src="{{cardItem.imgsrc}}" /> -->
+          <div align="center" class="ion-margin">
+            <ion-avatar class="home-card-avatar">
+              <img src="{{cardItem.imgsrc}}" />
+            </ion-avatar>
+
+            <ion-card-header>
+              <ion-card-title>
+                {{cardItem.title}}
+              </ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              {{cardItem.shortDesc}}
+            </ion-card-content>
+
+            <ion-button shape="round">
+              <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
+              {{cardItem.buttonText}}
+            </ion-button>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

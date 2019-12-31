@@ -62,6 +62,23 @@
   margin: 5px;
 }
 
+.font-large-bold {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text-white {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+ion-card {
+  --background: white;
+}
+
 // ion-toolbar {
 //   --background: linear-gradient(162deg, rgba(56, 70, 108, .8) 20%, rgba(56, 70, 108, .8) 100%), url('https://www.nexiga.com/geomarketing-blog/wp-content/uploads/2017/11/shutterstock_654668191_Parkhaus.jpg') bottom no-repeat;
 // }
