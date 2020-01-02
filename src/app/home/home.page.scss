@@ -1,8 +1,16 @@
 .home-section-1 {
   //border: 1px solid red;
   min-height: 460px;
-  //background//: linear-gradient(120deg, var(--ion-color-primary) 50%, var(--ion-color-primary-contrast) 50%);
-  background: linear-gradient(120deg, var(--ion-color-primary) 45%, var(--ion-color-primary-contrast) 55%);
+  background: linear-gradient(
+    120deg,
+    var(--ion-color-primary) 50%,
+    var(--ion-color-primary-contrast) 50%
+  );
+  // background: linear-gradient(
+  //   120deg,
+  //   var(--ion-color-primary) 45%,
+  //   var(--ion-color-primary-contrast) 55%
+  // );
 
   // background-image: url('../../assets/imgs/bg3.png');
   // background-repeat: no-repeat;
@@ -57,7 +65,11 @@
 
 .home-about-line1-span {
   color: white;
-  background: linear-gradient(to bottom right, var(--ion-color-primary-contrast), var(--ion-color-primary));
+  background: linear-gradient(
+    to bottom right,
+    var(--ion-color-primary-contrast),
+    var(--ion-color-primary)
+  );
   font-size: 20px;
   font-weight: 900;
   padding: 10px;
@@ -83,7 +95,11 @@
 
 .home-cards {
   //background: linear-gradient(120deg, var(--ion-color-primary) 45%, var(--ion-color-primary) 55%);
-  background: linear-gradient(to bottom right, var(--ion-color-primary-contrast), var(--ion-color-primary));
+  background: linear-gradient(
+    to bottom right,
+    var(--ion-color-primary-contrast),
+    var(--ion-color-primary)
+  );
   margin: 20px 0px 20px 0px;
   padding: 20px 0px 20px 0px;
 }
