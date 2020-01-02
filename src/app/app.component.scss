@@ -1,0 +1,21 @@
+ion-menu {
+  --ion-background-color: linear-gradient(
+    to bottom right,
+    var(--ion-color-primary-contrast),
+    var(--ion-color-primary)
+  );
+  --ion-text-color: var(--ion-color-light);
+
+  ion-toolbar {
+    --background: linear-gradient(
+      to bottom right,
+      var(--ion-color-primary-contrast),
+      var(--ion-color-primary)
+    );
+  }
+
+  ion-list {
+    /* optional, but it needs when you use gradient as a background color.*/
+    background: transparent;
+  }
+}
