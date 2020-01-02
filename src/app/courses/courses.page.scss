@@ -1,5 +1,9 @@
 ion-content {
-  --background: linear-gradient(to bottom right, #f39c12, #874aa2);
+  --background: linear-gradient(
+    to bottom right,
+    var(--ion-color-primary),
+    var(--ion-color-primary-contrast)
+  );
 }
 
 ion-card {
