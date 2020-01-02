@@ -1,4 +1,7 @@
-.container {
-  //background: linear-gradient(120deg, #874aa2 50%, #f39c12 50%);
-  background-image: linear-gradient(#874aa2, #9b59b6);
+ion-content {
+  --background: linear-gradient(to bottom right, #f39c12, #874aa2);
+}
+
+ion-card {
+  --background: white;
 }
