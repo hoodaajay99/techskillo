@@ -1,0 +1,21 @@
+// Footer
+.section-footer {
+  //border: 1px solid red;
+  margin-top: 100px;
+  min-height: 420px;
+  background: linear-gradient(
+    120deg,
+    var(--ion-color-primary) 50%,
+    var(--ion-color-secondary) 50%
+  );
+}
+.footer-col-heading {
+  --background: transparent;
+  --color: white;
+  --border-color: white;
+}
+
+.footer-col-item {
+  --background: transparent;
+  --color: white;
+}

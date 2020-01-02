@@ -42,5 +42,5 @@ export class HomePage {
   ];
 
   constructor(private platform: Platform) {}
-
+  
 }
