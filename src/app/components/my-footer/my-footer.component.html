@@ -1,25 +1,79 @@
-<div class="section-footer">
-    <ion-grid>
-      <ion-row>
-        <ion-col
-          size="6"
-          size-md="3"
-          size-lg="3"
-          size-xl="3"
-          *ngFor="let cols of footer"
-        >
-          <ion-item class="footer-col-heading">
-            <b> {{cols.heading}} </b>
-          </ion-item>
+<div class="branding">
+  <ion-item class="ion-text-center">
+    <ion-label>
+      <div class="branding-text">
+        TECH SKILLO
+      </div>
+    </ion-label>
+  </ion-item>
+</div>
 
-          <ion-item
-            *ngFor="let item of cols.items"
-            class="footer-col-item"
-            lines="none"
-          >
-            {{item.title}}
-          </ion-item>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+<!-- <div class="branding">
+
+    <ion-card>
+        <div align="center" class="ion-margin">
+          <ion-avatar class="home-card-avatar">
+            <img src="assets/TechSkilloFaviconAlpha.png" />
+          </ion-avatar>
+        </div>
+    </ion-card>
+
+    <ion-item class="ion-text-center">
+        <div> 
+  
+        </div>
+      </ion-item>
+  
+
+  <div align="center">
+
+      <ion-label>
+          <ion-avatar class="branding-avatar">
+              <img src="assets/TechSkilloFaviconAlpha.png" />
+            </ion-avatar>
+   
+        OK
+      </ion-label>
+    </ion-item>
   </div>
+
+  
+    <span class="branding-text">
+      Tech Skillo
+    </span>
+
+
+  <ion-grid> 
+    <ion-row>
+      <ion-col> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</div> -->
+
+<div class="section-footer">
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size="6"
+        size-md="3"
+        size-lg="3"
+        size-xl="3"
+        *ngFor="let cols of footer"
+      >
+        <ion-item class="footer-col-heading">
+          <b> {{ cols.heading }} </b>
+        </ion-item>
+
+        <ion-item
+          *ngFor="let item of cols.items"
+          class="footer-col-item"
+          lines="none"
+        >
+          {{ item.title }}
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
