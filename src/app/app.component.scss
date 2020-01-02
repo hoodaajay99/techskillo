@@ -1,7 +1,7 @@
 ion-menu {
   --ion-background-color: linear-gradient(
     to bottom right,
-    var(--ion-color-primary-contrast),
+    var(--ion-color-secondary),
     var(--ion-color-primary)
   );
   --ion-text-color: var(--ion-color-light);
@@ -9,7 +9,7 @@ ion-menu {
   ion-toolbar {
     --background: linear-gradient(
       to bottom right,
-      var(--ion-color-primary-contrast),
+      var(--ion-color-secondary),
       var(--ion-color-primary)
     );
   }
