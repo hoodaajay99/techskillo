@@ -1,7 +1,8 @@
 .home-section-1 {
   //border: 1px solid red;
   min-height: 460px;
-  background: linear-gradient(120deg, #874aa2 50%, #f39c12 50%);
+  //background//: linear-gradient(120deg, #874aa2 50%, #f39c12 50%);
+  background: linear-gradient(120deg, #874aa2 45%, #f39c12 55%);
 
   // background-image: url('../../assets/imgs/bg3.png');
   // background-repeat: no-repeat;
@@ -10,6 +11,23 @@
 
 .home-section-1-1 {
   min-height: 460px;
+}
+
+.home-section-1-line1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.home-section-1-line2 {
+  margin: 15px 0px 0px 0px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.home-section-1-line3 {
+  margin: 15px 0pc 15px 0px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .vertical-center {
@@ -22,7 +40,7 @@
 }
 
 .image1 {
-  object-fit:cover;
+  object-fit: cover;
   //margin: 20px;
   // height: 400px;
   // width: 400px;
@@ -30,12 +48,56 @@
 
 .home-about {
   text-align: center;
-  margin-top: 30px;
-  margin-top: 30px;
+  margin: 8%;
+}
+
+.home-about-line1-div {
+  margin: 5%;
+}
+
+.home-about-line1-span {
+  color: white;
+  background: linear-gradient(to bottom right, #f39c12, #874aa2);
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.home-about-line2 {
+  margin: 5% 10% 5% 10%;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.home-about-line3 {
+  margin: 5% 10% 5% 10%;
+  font-size: 20px;
+  font-weight: 500;
+}
+// ion-card {
+//   --background: #874aa2;
+//   --color: white;
+// }
+
+.home-cards {
+  //background: linear-gradient(120deg, #874aa2 45%, #874aa2 55%);
+  background: linear-gradient(to bottom right, #f39c12, #874aa2);
+  margin: 20px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .home-card-avatar {
   height: 100px;
   width: 100px;
   border: 8px solid #f39c12;
+}
+
+.home-card-header {
+  height: 80px;
+}
+
+.home-card-content {
+  min-height: 100px;
 }

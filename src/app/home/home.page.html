@@ -34,12 +34,15 @@
           align-self-center
         >
           <div class="vertical-center">
-            <h1><b> Tech Skillo </b></h1>
-            <h3><b> Home to Learn Programming! </b></h3>
-            <h5>
+            <div class="home-section-1-line1">Tech Skillo</div>
+
+            <div class="home-section-1-line2">Home to Learn Programming!</div>
+
+            <div class="home-section-1-line3">
               Tech Skillo is a platform to learn programming with high quality
               tutorials, courses and videos.
-            </h5>
+            </div>
+
             <ion-button
               size="large"
               fill="outline"
@@ -55,7 +58,11 @@
         <ion-col class="home-section-1-1" align-self-center>
           <div class="vertical-center">
             <div class="ion-margin">
-              <img src="assets/imgs/18.png" alt="Tech Skillo" class="image1" />
+              <img
+                src="assets/imgs/img-main-page.png"
+                alt="Tech Skillo"
+                class="image1"
+              />
             </div>
             <!-- 17, 18 -->
           </div>
@@ -65,59 +72,59 @@
   </div>
 
   <div class="home-about">
-    <ion-grid>
-      <ion-row>
-        <ion-col> </ion-col>
-        <ion-col size="8">
-          <h4 class="ion-margin"><b>ABOUT TECHSKILLO</b></h4>
-          <h1 class="ion-margin">
+
+          <div class="home-about-line1-div">
+            <span class="home-about-line1-span">
+              ABOUT TECHSKILLO
+            </span>
+          </div>
+
+          <div class="home-about-line2">
             A place to learn latest programming with high quality tutorials,
             courses and videos.
-          </h1>
-          <h6 class="ion-margin">
+          </div>
+          <div class="home-about-line3">
             Courses are designed in a way that they are easy to follow, latest
             in market, provide you support for questions and can earn you a
             certificate.
-          </h6>
+          </div>
+  </div>
+
+  <div class="home-cards">
+    <ion-grid>
+      <ion-row>
+        <ion-col
+          size="12"
+          size-md="6"
+          size-lg="6"
+          size-xl="3"
+          *ngFor="let cardItem of cardsList"
+        >
+          <ion-card color="light">
+            <!-- <img src="{{cardItem.imgsrc}}" /> -->
+            <div align="center" class="ion-margin">
+              <ion-avatar class="home-card-avatar">
+                <img src="{{cardItem.imgsrc}}" />
+              </ion-avatar>
+
+              <ion-card-header class="home-card-header">
+                <ion-card-title>
+                  {{cardItem.title}}
+                </ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content class="home-card-content">
+                {{cardItem.shortDesc}}
+              </ion-card-content>
+
+              <ion-button shape="round" fill="outline" size="large">
+                <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
+                {{cardItem.buttonText}}
+              </ion-button>
+            </div>
+          </ion-card>
         </ion-col>
-        <ion-col> </ion-col>
       </ion-row>
     </ion-grid>
   </div>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col
-        size="12"
-        size-md="3"
-        size-lg="3"
-        size-xl="3"
-        *ngFor="let cardItem of cardsList"
-      >
-        <ion-card>
-          <!-- <img src="{{cardItem.imgsrc}}" /> -->
-          <div align="center" class="ion-margin">
-            <ion-avatar class="home-card-avatar">
-              <img src="{{cardItem.imgsrc}}" />
-            </ion-avatar>
-
-            <ion-card-header>
-              <ion-card-title>
-                {{cardItem.title}}
-              </ion-card-title>
-            </ion-card-header>
-
-            <ion-card-content>
-              {{cardItem.shortDesc}}
-            </ion-card-content>
-
-            <ion-button shape="round">
-              <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
-              {{cardItem.buttonText}}
-            </ion-button>
-          </div>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>
