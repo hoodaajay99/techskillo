@@ -19,7 +19,14 @@ export class CoursesPage implements OnInit {
       title: "Linux Kernel and Device Drivers",
       shortDesc: "Learn Linux Kernel Internals and Device Drivers, including Kernel Modules, Character Drivers, Network Drivers",
       link:"https://ldd.techskillo.com"
-    }
+    },
+    {
+      imgsrc: "assets/imgs/cryptography.png",
+      title: "Cryptography with Openssl",
+      shortDesc: "Learn Cryptography Basics, Using OpenSSL and Linux Kernel Crypto Framework for Cryptography",
+      link:"https://crypto.techskillo.com"
+    }    
+
   ];
 
   constructor() { }
