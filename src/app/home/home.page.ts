@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Platform } from "@ionic/angular";
+import { AdsenseComponent } from 'ng2-adsense';
 
 @Component({
   selector: "app-home",
