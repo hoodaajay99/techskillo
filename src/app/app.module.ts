@@ -8,7 +8,6 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AdsenseModule } from 'ng2-adsense';
 
 
 @NgModule({
@@ -18,7 +17,6 @@ import { AdsenseModule } from 'ng2-adsense';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    AdsenseModule
   ],
   providers: [
     StatusBar,

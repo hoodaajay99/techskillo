@@ -15,7 +15,10 @@ import { ComponentsModule } from '../components/components.module';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    AdsenseModule,
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-1626897974362122',
+      adSlot: 4913979477,
+    }),
     RouterModule.forChild([
       {
         path: '',
