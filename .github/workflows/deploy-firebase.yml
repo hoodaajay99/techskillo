@@ -28,6 +28,7 @@ jobs:
     - name: Build
       run: |
         ionic build --prod
+        cp ads.txt www/.
         ls www
         
     - name: Deploy to Firebase
