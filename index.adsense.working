@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tech Skillo - Home to Tech Learning</title>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <script>
+    window.onload = function() {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      console.log("adsbygoogle=", adsbygoogle);
+    }    
+    // (adsbygoogle = window.adsbygoogle || []).push({});
+    // console.log("adsbygoogle=", adsbygoogle);
+  </script>
+
+</head>
+
+<body>
+
+        <!-- Techskillo-Horizontal -->
+        <ins 
+            class="adsbygoogle" 
+            style="display:block" 
+            data-ad-client="ca-pub-1626897974362122"
+            data-ad-slot="4913979477" 
+            data-ad-format="auto" 
+            data-full-width-responsive="true"
+        >
+        </ins>
+
+        <div> Hello World 3</div>        
+
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div> Hello World </div>
+      </ion-col>
+
+      <ion-col>
+        <div> 
+          Hello World 2 
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+
+</body>
+
+</html>
