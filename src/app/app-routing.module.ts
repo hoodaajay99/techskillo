@@ -14,7 +14,12 @@ const routes: Routes = [
   {
     path: 'courses',
     loadChildren: () => import('./courses/courses.module').then( m => m.CoursesPageModule)
+  },
+  {
+    path: 'plasmadonoprivacy',
+    loadChildren: () => import('./plasmadono/privacy/privacy.module').then( m => m.PrivacyPageModule)
   }
+
 ];
 
 @NgModule({
